@@ -1,5 +1,5 @@
 :root {
-
+    font-family: 'Roboto', sans-serif;
 }
 
 body {
@@ -14,8 +14,8 @@ header {
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem;
-
+    padding: 1rem 2rem 1rem 2rem;
+    gap: 1rem;
 }
 
 .bg-orange {
@@ -26,11 +26,50 @@ header {
     background-color: #343a40!important;
 }
 
+
+.search {
+    border-radius: 0.25rem;
+    border: none;
+    z-index: 1;
+}
+
+.btn {
+    border: none;
+    padding: .5rem;
+    border-radius: 0.25rem;
+    font-family: inherit;
+}
+
+.btn-search {
+    margin-left: -.25rem;
+    color: white;
+}
+
+.btn-search:hover {
+    background-color: #e9633e
+}
+
 .container {
     display: flex;
     justify-content: center;
-
+    color: white;
 }
+
+#title {
+    gap: 1rem;
+}
+
+#title h1 {
+    padding: 0;
+    margin: 0;
+    font-size: 1.75rem;
+    font-weight: 400;
+}
+
+#title img {
+    height: 2rem;
+}
+
 
 @media (max-width: 800px) {
     .container {
